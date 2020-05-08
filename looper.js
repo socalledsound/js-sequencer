@@ -28,9 +28,10 @@ function mainLoop(){
                 child.style.opacity=0.3;
             }       
         });
-        container.children[count%numDivs].style.backgroundColor="black";
-        container.children[count%numDivs].style.opacity=0.4;
-        if(container.children[count%numDivs].id=="clicked"){
+        let specialChild =  container.children[count%numDivs]
+        specialChild.style.backgroundColor="black";
+        specialChild.style.opacity=0.4;
+        if(specialChild.id=="clicked"){
             sounds[index].play();
         }
     });
