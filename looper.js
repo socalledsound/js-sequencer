@@ -1,5 +1,5 @@
 const numDivs = 8;
-const size = 80;
+const size = 60;
 const paddingVal = 8;
 const numContainers  = 4;
 const colors = Array.from({length : numContainers},() =>`rgb(${Math.random()*255},${Math.random()*255},${Math.random()*255})`);
@@ -42,10 +42,10 @@ function styleContainer(container){
     container.style.display="flex";
     container.style.justifyContent="flex-start";
     container.style.flexWrap="wrap";
-    container.style.height="12vh";
-    container.style.width="50vw";
-    container.style.marginLeft="25vw";
-    container.style.marginTop="3vw";
+    container.style.height="100px";
+    container.style.width="800px";
+    container.style.marginLeft="10vw";
+    container.style.marginTop="3px";
     container.backgroundColor="red";
 }
 
